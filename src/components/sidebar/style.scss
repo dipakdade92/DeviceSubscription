@@ -1,0 +1,36 @@
+.sidebar-section {
+  width: 200px;
+  color: #026786;
+  font-weight: 700;
+  text-align: left;
+  padding: 30px 0;
+  > div {
+    .sidebar-links {
+      color: #026786;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 10px;
+      letter-spacing: -0.28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-left: 3px solid transparent;
+
+      &.sidebar-active {
+        color: #00A3AD;
+        border-left: 3px solid #00A3AD;
+      }
+
+      &.sidebar-remain {
+        color: #B2B2B2;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+    .sidebar-section {
+        display: none;
+    }
+}

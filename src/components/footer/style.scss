@@ -1,0 +1,42 @@
+.footer-body {
+  position: sticky;
+  bottom: 0;
+  padding: 20px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px -3px 6px #00000014;
+  z-index: 9999;
+  > div {
+    max-width: 1224px;
+    margin: 0 auto;
+    text-align: right;
+    button {
+      cursor: pointer;
+      padding: 15px;
+      min-width: 301px;
+      font-size: 18px;
+      font-weight: 700;
+      background-color: #ffcd05;
+      border-radius: 4px;
+      color: #00a3ad;
+      border: 1px solid #ffcd05;
+      opacity: 0.5;
+      transition: 0.4s ease-in;
+      &:hover {
+        opacity: 1;
+        border: 1px solid #00a3ad;
+      }
+    }
+  }
+}
+
+@media (max-width: 715px) {
+  .footer-body {
+    padding: 6px 20px;
+    > div {
+      button {
+        width: 100%;
+        min-width: unset;
+      }
+    }
+  }
+}
